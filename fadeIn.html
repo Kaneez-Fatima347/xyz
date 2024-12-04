@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+  
+
+    <!-- Bootstrap CSS -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    
+  </head>
+  <body>
+ 
+      <h2>welcome</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatum similique labore alias tenetur. Maiores, id nobis aperiam dolorem labore iusto libero sequi repellendus quaerat numquam, repellat ipsa aliquid magnam facilis aut quae recusandae esse. Similique alias id accusamus porro impedit blanditiis nihil dicta minus quo. Odio iusto voluptatum atque eum laborum autem cumque. Dolor quas odit nam quo, optio recusandae inventore, animi error nihil soluta reiciendis asperiores officiis, nostrum eveniet iure impedit minima quidem unde quod facilis dolore! Provident enim sint, eaque culpa ipsum modi ab doloribus exercitationem fuga molestiae cumque voluptates eius maiores perferendis repellendus eos quod dignissimos non, ipsa nisi! Adipisci et excepturi, impedit voluptatem labore porro similique enim unde vel hic mollitia asperiores provident dolorem nulla. Dolor repellendus quae porro ab aut totam nisi iusto ipsum eos? Nulla ducimus quia libero consequatur, numquam maxime pariatur quisquam iste cumque reprehenderit qui. Exercitationem, maxime reiciendis consectetur, vero aperiam accusamus praesentium deleniti quibusdam quam nobis beatae? Cum eos suscipit, adipisci eveniet unde facere magnam libero explicabo numquam molestias mollitia earum beatae accusamus deleniti culpa accusantium sed commodi eligendi repudiandae a non distinctio vel voluptatum cupiditate. Unde eius libero vel, ullam ipsam veniam dignissimos dolore reiciendis fuga illo omnis debitis provident temporibus consequuntur odio quae explicabo ab aliquid nostrum excepturi voluptate cum! Quae ab sunt architecto, mollitia assumenda libero quibusdam suscipit! Ad unde numquam similique voluptatum cum sunt, natus fuga iure aut distinctio corporis repudiandae saepe magnam libero iste possimus id consectetur illo vel veniam quia excepturi deleniti! Et excepturi exercitationem nam sit? Accusamus nesciunt optio perferendis! Consectetur, cupiditate. Iure voluptate et eligendi suscipit perspiciatis possimus adipisci ullam exercitationem unde, quos placeat asperiores dolore vitae eaque ut voluptates similique recusandae numquam autem vel? Perspiciatis doloremque neque totam at, sequi inventore repellat fuga repellendus, sed sunt iusto voluptatem? Doloribus, laborum aliquam?</p>
+  <div id="div1" style="display:none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eaque.</div>
+  <div id="div2" style="display:none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eaque.</div>
+  
+  <div id="div3" style="display:none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eaque.</div>
+  
+
+      <button>click</button>
+      <button id="btn">Show</button>
+      <button id="stop">Stop Fading</button>
+
+   <script>
+       $("button").click(function(){
+        $("p").toggle(1000);
+      });
+    $("button").click(function(){
+  $("#div1").fadeIn();
+  $("#div2").fadeIn("slow");
+  $("#div3").fadeIn(3000);
+});
+
+$("#btn").click(function(){
+  $("#div1").fadeOut();
+  $("#div2").fadeOut("slow");
+  $("#div3").fadeOut(3000);
+});
+
+$('#btn').click(function()
+{
+  $('#div1').fadeIn(3000);
+  $('#div1').prepend('hsjahdjadhaj');
+  $('#div2').remove('<h2>We are Learning JavaScript</h2>');
+  
+  
+});
+$('#stop').click(function()
+{
+   $('#div').slideToggle(4000);
+   $('#div').slideUp();
+  $('#div1').stop();
+
+});
+
+$('#stop').click(function()
+{
+ $('#p').html('<h3></h3>');
+ $('#p').html(3000);
+});
+$('#stop').click(function()
+{
+$('#div').slideDown();
+$('#div').slideToggle();
+$('#div').slideUp();
+});
+   </script>
+   
+   
+      <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
